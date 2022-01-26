@@ -1,58 +1,110 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>My presentation</title> 
-</head>
-
-<body>
-
-    <h1> My Presentation </h1>
-
-    <p1> My name is Gregory Skrbic. This is my presentation. </p1> 
-
-    <br>
-
-    <br>
-
-<table border = "1">
-    <tr>
-        <th></th>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-    </tr>
-    <tr>
-        <th>1</th>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <th>2</th>
-        <td>2</td>
-        <td>4</td>
-        <td>6</td>
-        <td>8</td>
-    </tr>
-    <tr>
-        <th>3</th>
-        <td>3</td>
-        <td>6</td>
-        <td>9</td>
-        <td>12</td>
-    </tr>
-    <tr>
-        <th>4</th>
-        <td>4</td>
-        <td>8</td>
-        <td>12</td>
-        <td>16</td>
-    </tr>
-</table>
+    <title>Main</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+            
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/pocetna.css">
+    </head>
+</head>
+<body>
+   <nav class="nav">
+           <div class="container">
+              
+               <div id="mainListDiv" class="main_list">
+                   <ul class="navlinks">
+                            <li class="nav-item">
+                       <a class="nav-link" href="RecentNews.html">Recent News</a>
+                            </li>
+                        <li class="nav-item">
+                       <a class="nav-link" href="Reviews.html">Reviews</a>
+                            </li>
+                        <li class="nav-item">
+                       <a class="nav-link" href="Contact.html">Contact</a>
+                            </li
+                   </ul>
+               </div>
+               <span class="navTrigger">
+                   <i></i>
+                   <i></i>
+                   <i></i>
+               </span>
+           </div>
+       </nav>
+
+       <section class="home">
+       </section>
+
+
+      <div>
+          <h2 class="myH2">Who we are?</h2>
+          
+                <p class="myP">
+                
+                  E-Mobility is a new online journal dedicated to electric cars and more. Our journal follows the latest news and trends in the e-mobility world, including reviews of the latest models, current developments in electric transportation and relevant ecological researches. Our aim is to popularize and inform people on important developments in the industry.
+            </p>
+    </div>
+
+      </div>
+
+       <!-- Footer -->
+        <footer class="text-center">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <div class="flex-center">
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                      <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                      <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic">
+                      <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic">
+                      <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                      <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Pinterest-->
+                    <a class="pin-ic">
+                      <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                    </a>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+          </footer>
+   <!-- Jquery needed -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <script src="js/scripts.js"></script>
+
+   <!-- Function used to shrink nav bar removing paddings and adding black background -->
+       <script>
+           $(window).scroll(function() {
+               if ($(document).scrollTop() > 50) {
+                   $('.nav').addClass('affix');
+                   console.log("OK");
+               } else {
+                   $('.nav').removeClass('affix');
+               }
+           });
+       </script>
 </body>
-
-
 </html>
